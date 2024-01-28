@@ -1,5 +1,11 @@
 import { EPharmacyName, EPharmacyNameValues } from '../enums/integration.enum';
 
+export interface IOrderService<T> {
+  createOrder: (t: T) => T;
+  getAllOrders: () => T[];
+  getOrderById: (orderId: string) => T;
+}
+
 export type HealthMartOrder = OrderType<
   EPharmacyName.healthmart,
   'Cust',
@@ -16,13 +22,7 @@ export type QuickCareOrder = OrderType<
   'UserData'
 >;
 
-export interface IOrderService<T> {
-  createOrder: (t: T) => T;
-  getAllOrders: () => T[];
-  getOrderById: (orderId: string) => T;
-}
-
-export type OrderType<
+type OrderType<
   EPharmacy extends EPharmacyNameValues,
   TPrefix extends string,
   TDetailKey extends string,

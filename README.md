@@ -3,9 +3,8 @@
 To add another new pharmacy, one just need to follow the steps below just like the other 3:  
 1. add the pharmacy name to `EPharmacyName` under `src/integration/enums/integration.enum.ts`
 2. create its `OrderType` in `src/integration/interfaces/order.interface.ts`
-3. create its `service` under `src/integration/services`
-4. add the `service` in `src/integration/integration.module.ts`
-5. modify the `switch` case in `src/integration/integration.factory.ts`
+3. create its `service` and `controller` under `src/integration/services` and `src/integration/controllers` respectively
+4. add the `service` and `controller` in `src/integration/integration.module.ts`
 
 ## Installation
 
