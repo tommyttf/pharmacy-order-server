@@ -1,6 +1,6 @@
 # Order Service with Pharmacy Integration
 
-[![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/tommyttf/3c376d8043ff9814b38b529acf221d40/raw/pharmacy-order-server__heads_main.json)]
+![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/tommyttf/3c376d8043ff9814b38b529acf221d40/raw/pharmacy-order-server__heads_main.json)
 
 Nestjs API server to create and retrieve orders from different pharmacy integrations
 
