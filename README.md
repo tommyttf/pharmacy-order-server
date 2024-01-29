@@ -1,10 +1,12 @@
 # Order Service with Pharmacy Integration
 
-To add another new pharmacy, one just need to follow the steps below just like the other 3:  
-1. add the pharmacy name to `EPharmacyName` under `src/integration/enums/integration.enum.ts`
-2. create its `OrderType` in `src/integration/interfaces/order.interface.ts`
-3. create its `service` and `controller` under `src/integration/services` and `src/integration/controllers` respectively
-4. add the `service` and `controller` in `src/integration/integration.module.ts`
+[![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/tommyttf/3c376d8043ff9814b38b529acf221d40/raw/png-to-jpeg-using-worker-threads__heads_main.json)]
+
+Nestjs API server to create and retrieve orders from different pharmacy integrations
+
+Whenever there is a new integration available from the mock API, just restart the server and `OrderService` will fetch the latest list from the mock API, or can set up a cron job to do it once per day
+
+Assume there will be no same referId to be provided by different integrations
 
 ## Installation
 

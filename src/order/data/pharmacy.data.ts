@@ -1,8 +1,3 @@
-import {
-  CarePlusOrder,
-  HealthMartOrder,
-  QuickCareOrder,
-} from '../interfaces/order.interface';
 import { IPharmacy } from '../interfaces/pharmacy.interface';
 
 export const pharmacies: IPharmacy[] = [
@@ -40,7 +35,7 @@ export const pharmacies: IPharmacy[] = [
     phone: '765-432-1098',
   },
 ];
-export const healthMartOrders: HealthMartOrder[] = [
+export const healthMartOrders = [
   {
     healthMartId: '1706377885997',
     healthMartProduct: 'Painkiller',
@@ -56,7 +51,7 @@ export const healthMartOrders: HealthMartOrder[] = [
   },
 ];
 
-export const carePlusOrders: CarePlusOrder[] = [
+export const carePlusOrders = [
   {
     carePlusId: '1706377885997',
     carePlusProduct: 'Antibiotics',
@@ -72,7 +67,7 @@ export const carePlusOrders: CarePlusOrder[] = [
   },
 ];
 
-export const quickCareOrders: QuickCareOrder[] = [
+export const quickCareOrders = [
   {
     quickCareId: '1706377885997',
     quickCareProduct: 'Cold Medicine',
