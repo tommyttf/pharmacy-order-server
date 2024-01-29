@@ -68,7 +68,7 @@
     "collectCoverage": true,
     "testEnvironment": "node",
     "collectCoverageFrom": [
-      "**/*.(t|j)s"
+      "**/*.{!(module|data),}.(t|j)s"
     ],
     "coverageDirectory": "../coverage/jest",
     "coverageReporters": ["text", "cobertura"],
