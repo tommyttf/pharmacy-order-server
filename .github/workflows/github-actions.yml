@@ -24,7 +24,7 @@ jobs:
           cache: 'npm'
       - run: mkdir uploads && mkdir uploads/png
       - run: npm ci
-      - run: npm run test:cov
+      - run: npm test
 
       - name: Code Coverage Summary Report
         uses: irongut/CodeCoverageSummary@v1.3.0
@@ -47,7 +47,7 @@ jobs:
 
       - name: Get Coverage for badge
         run: |
-          SUMMARY="$(npm run test:cov -- --coverageReporters='text-summary' | tail -2 | head -1)"
+          SUMMARY="$(npm test -- --coverageReporters='text-summary' | tail -2 | head -1)"
           TOKENS=($SUMMARY)
           echo "COVERAGE=$(echo ${TOKENS[2]})" >> $GITHUB_ENV
   
