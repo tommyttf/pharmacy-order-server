@@ -8,6 +8,9 @@ Whenever there is a new integration available from the mock API, just restart th
 
 Assume there will be no same referId to be provided by different integrations
 
+## Swagger UI
+After start the server, can visit `http://localhost:3000/api` to try out the API server
+
 ## Installation
 
 ```bash

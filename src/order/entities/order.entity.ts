@@ -1,3 +1,5 @@
+import { ApiProperty } from '@nestjs/swagger';
+
 export class Order {
   constructor(
     private _referId: string,
@@ -6,6 +8,9 @@ export class Order {
     private _id?: number,
   ) {}
 
+  @ApiProperty({
+    description: 'id from this server',
+  })
   get id(): number {
     return this._id;
   }
@@ -14,6 +19,9 @@ export class Order {
     this._id = value;
   }
 
+  @ApiProperty({
+    description: 'id from the integration',
+  })
   get referId(): string {
     return this._referId;
   }
@@ -22,6 +30,9 @@ export class Order {
     this._referId = value;
   }
 
+  @ApiProperty({
+    description: 'payload received from the integration',
+  })
   get referPayload(): any {
     return this._referPayload;
   }
@@ -30,6 +41,9 @@ export class Order {
     this._referPayload = value;
   }
 
+  @ApiProperty({
+    description: 'the pharmacy integration name',
+  })
   get integration(): string {
     return this._integration;
   }
